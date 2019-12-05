@@ -1,0 +1,8 @@
+rule Possible_Bulk_Emails
+{
+  strings:
+    $reg1 = /[\S]+@[^\.]+\..+/
+
+  condition:
+    #reg1 > 10
+}

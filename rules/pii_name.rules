@@ -1,0 +1,8 @@
+rule Possible_Bulk_Names
+{
+  strings:
+    $reg1 = /\b([A-Z](\'[A-Z]?)?[a-z]+[\s\.,-]?){2,5}\b/
+
+  condition:
+    #reg1 > 10
+}
